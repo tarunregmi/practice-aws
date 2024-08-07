@@ -1,0 +1,8 @@
+# node
+node_modules
+
+# compiled output
+dist
+
+# environment variables
+.env

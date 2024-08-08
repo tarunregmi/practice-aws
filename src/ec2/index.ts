@@ -1,6 +1,6 @@
 import { createServer } from 'http';
 
-const HOST = process.env.APP_HOST || 'localhost';
+const HOST = process.env.APP_HOST || '0.0.0.0';
 const PORT = parseInt(process.env.APP_PORT || '8080');
 
 /**
@@ -13,6 +13,14 @@ const server = createServer((req, res) => {
       JSON.stringify({
         success: true,
         message: 'Hello from AWS EC2 instance.',
+      })
+    );
+  } else if (req.method === 'GET' && req.url === '/hello') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(
+      JSON.stringify({
+        success: true,
+        message: `You visit '/hello' endpoint.`,
       })
     );
   } else {

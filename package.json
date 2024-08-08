@@ -7,10 +7,7 @@
     "start": "node dist/index.js",
     "start:dev": "nodemon src/index.ts"
   },
-  "dependencies": {
-    "@aws-sdk/client-s3": "^3.624.0",
-    "@aws-sdk/s3-request-presigner": "^3.624.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.1.0",
     "nodemon": "^3.1.4",

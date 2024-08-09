@@ -3,6 +3,9 @@ import { createServer } from 'http';
 const HOST = process.env.APP_HOST || '0.0.0.0';
 const PORT = parseInt(process.env.APP_PORT || '8080');
 
+// Assign title to process
+process.title = process.env.APP_NAME || 'Node Server';
+
 /**
  * @description Simple `http` server to handel only `GET` request at `/` route.
  */

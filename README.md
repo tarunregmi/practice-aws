@@ -1,7 +1,7 @@
 **Command to connect EC2 instance using SSH**
 
 ```bash
-ssh -i <"path/to/key.pem"> <user@remote_host>
+ssh -i path/to/key.pem user@remote
 ```
 
 **Command to push your code to EC2 instance using RSYNC**

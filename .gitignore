@@ -6,3 +6,9 @@ dist
 
 # environment variables
 .env
+
+# keys
+keys
+
+# logs
+logs

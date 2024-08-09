@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "start": "node dist/index.js",
+    "start:bg": "nohup node dist/index.js > logs/server.log 2>&1 &",
     "start:dev": "nodemon src/index.ts"
   },
   "dependencies": {},
